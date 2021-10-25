@@ -1,3 +1,19 @@
+let map;
+
+function initMap() {
+    const uluru = { lat: -6.929449, lng: 108.860251 };;
+
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: uluru,
+        zoom: 19,
+    });
+
+    const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+    });
+}
+
 $(function() {
     
     "use strict";
@@ -72,6 +88,12 @@ $(function() {
                 }
             });
         });
+
+    /* image modal - lightbox */
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
 
         /* Card Slider - Swiper */
 	var cardSlider = new Swiper('.card-slider', {

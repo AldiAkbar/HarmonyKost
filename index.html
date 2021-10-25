@@ -11,6 +11,8 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <!-- LineIcons -->
         <link rel="stylesheet" href="assets/css/lineicons.css">
+        <!-- lightbox for gallery -->
+        <link rel="stylesheet" href="assets/css/ekko-lightbox.css">
         <!-- swiper for testiomoni -->
         <link rel="stylesheet" href="assets/css/swiper.css">
         <!-- custom CSS -->
@@ -176,45 +178,66 @@
                     </div> <!-- end col -->
                 </div> <!-- end row -->
 
-                <div class="row">
+                <div class="group-pic">
+                    <div class="row mb-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single-pic">
+                                <a href="assets/img/galeri/IMG_20210207_112402.jpg" id="open-image" data-toggle="lightbox"
+                                    data-gallery="example-gallery">
+                                    <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1" class="img-fluid">
+                                </a>
+                                </div>
+                                </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-pic">
-                            <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1">
-                        </div>
-                    </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single-pic">
+                                <a href="assets/img/galeri/IMG_20210207_112402.jpg" id="open-image" data-toggle="lightbox"
+                                    data-gallery="example-gallery">
+                                    <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1" class="img-fluid">
+                                </a>
+                                </div>
+                                </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-pic">
-                            <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1">
-                        </div>
-                    </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single-pic">
+                                <a href="assets/img/galeri/IMG_20210207_112402.jpg" id="open-image" data-toggle="lightbox"
+                                    data-gallery="example-gallery">
+                                    <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1" class="img-fluid">
+                                </a>
+                                </div>
+                                </div>
+                    </div> <!-- end row -->
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-pic">
-                            <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1">
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-pic">
-                            <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1">
-                        </div>
-                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single-pic">
+                                <a href="assets/img/galeri/IMG_20210207_112402.jpg" id="open-image" data-toggle="lightbox"
+                                    data-gallery="example-gallery">
+                                    <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1" class="img-fluid">
+                                </a>
+                                </div>
+                                </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-pic">
-                            <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1">
-                        </div>
-                    </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single-pic">
+                                <a href="assets/img/galeri/IMG_20210207_112402.jpg" id="open-image" data-toggle="lightbox"
+                                    data-gallery="example-gallery">
+                                    <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1" class="img-fluid">
+                                </a>
+                                </div>
+                                </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-pic">
-                            <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1">
-                        </div>
-                    </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="single-pic">
+                                <a href="assets/img/galeri/IMG_20210207_112402.jpg" id="open-image" data-toggle="lightbox"
+                                    data-gallery="example-gallery">
+                                    <img src="assets/img/galeri/IMG_20210207_112402.jpg" alt="foto-1" class="img-fluid">
+                                </a>
+                                </div>
+                                </div>
+                    </div> <!-- end row -->
+                </div> <!-- end group-pic -->
 
-                </div> <!-- end row -->
                 
             </div> <!-- end container -->
 
@@ -430,9 +453,7 @@
                     <div class="row">
                         
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="maps">
-                                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            </div> <!-- end maps-->
+                            <div id="map" class="maps"></div>
                         </div> <!-- end col -->
     
                         <div class="col-lg-6 col-md-12 col-sm-12">
@@ -500,8 +521,11 @@
         <script src="assets/js/jquery.min.js"></script> <!-- jquery -->
         <script src="assets/js/bootstrap.min.js"></script> <!-- bootstrap -->
         <script src="assets/js/jquery.easing.min.js"></script> <!-- easing for navbar -->
+        <script src="assets/js/ekko-lightbox.js"></script> <!-- lightbox for image gallery-->
         <script src="assets/js/swiper.min.js"></script> <!-- swiper for testiomoni -->
         <script src="assets/js/script.js"></script> <!-- custom javascript -->
-
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbo5ZPy2bOs_Pw8tXNvDldUlrKgkaPU0Y&callback=initMap&libraries=&v=weekly"
+            async></script>
     </body>
 </html>

@@ -761,71 +761,73 @@ a.back-to-top {
 .galeri-section {
   background-color: #FFF;
   padding-top: 100px;
-  padding-bottom: 100px;
-} .galeri-section .single-pic {
-  position: relative;
-  width: 100%;
-  margin-top: 50px;
-  box-shadow: 0 0 5px rgba(0,0,0,.1);
-  transition:.5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;  }
-  .galeri-section .single-pic:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
-    -webkit-transform:scale(1.05);
-    -moz-transform:scale(1.05);
-    -ms-transform:scale(1.05);
-    -o-transform:scale(1.05);
-    transform:scale(1.05);
-  }  
-  @media (max-width: 767px) {
-    .galeri-section .single-pic {
-      width: 70%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;  } 
-    .galeri-section .single-pic:hover {
-      -webkit-transform:scale(1.25);
-      -moz-transform:scale(1.25);
-      -ms-transform:scale(1.25);
-      -o-transform:scale(1.25);
-      transform:scale(1.25);
-    } }
+  padding-bottom: 100px; } 
+  .galeri-section .group-pic {
+  margin-top: 50px; } 
+    .galeri-section .group-pic .single-pic {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    transition:.5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;  }
+    .galeri-section .group-pic .single-pic:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,.2);
+      -webkit-transform:scale(1.05);
+      -moz-transform:scale(1.05);
+      -ms-transform:scale(1.05);
+      -o-transform:scale(1.05);
+      transform:scale(1.05);
+    }  
+    @media (max-width: 767px) {
+      .galeri-section .group-pic .single-pic {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  } 
+      .galeri-section .group-pic .single-pic:hover {
+        -webkit-transform:scale(1.25);
+        -moz-transform:scale(1.25);
+        -ms-transform:scale(1.25);
+        -o-transform:scale(1.25);
+        transform:scale(1.25);
+      } }
 
-/*===========================
-        06. BREAK POINT
-===========================*/
+  /*===========================
+          06. BREAK POINT
+  ===========================*/
 
-.break-point-section {
-  background-color: #EE66AA;
-  max-height: 400px;
-}
-  .break-point-section .word {
-    width: 290px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    letter-spacing: 5%;
+  .break-point-section {
+    background-color: #EE66AA;
+    max-height: 400px;
   }
-    .break-point-section .word h1 {
-      font-family: 'Bebas Neue', cursive;
-      letter-spacing: 0.05em;
-      color: #fff;
-      font-size: 60px;
-      margin-top: 15px;
-      text-align: center;
-    } @media (max-width: 767px) {
-      .break-point-section .word h1 {
-        font-size: 40px;
-      }
+    .break-point-section .word {
+      width: 290px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      letter-spacing: 5%;
     }
-  .break-point-section .break-image {
-    padding: 0;
-    width: 90%;
-    margin-top: 40px;
-  }
+      .break-point-section .word h1 {
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 0.05em;
+        color: #fff;
+        font-size: 60px;
+        margin-top: 15px;
+        text-align: center;
+      } @media (max-width: 767px) {
+        .break-point-section .word h1 {
+          font-size: 40px;
+        }
+      }
+    .break-point-section .break-image {
+      padding: 0;
+      width: 90%;
+      margin-top: 40px;
+    }
 
 
 /*===========================
@@ -943,11 +945,11 @@ a.back-to-top {
   .kontak-section .kontak-details {
     margin-top: 50px;
   }
-  .kontak-section .kontak-details .maps iframe{
+  .kontak-section .kontak-details .maps{
     height: 300px;
     width: 100%; }
   @media (max-width:767px)  {
-    .kontak-section .kontak-details .maps iframe {
+    .kontak-section .kontak-details .maps {
       height: 350px; } }
     .kontak-section .kontak-details .contact {
       margin-bottom: 30px; }
